@@ -1,5 +1,5 @@
-from v1.resources.todos import todos
+from v1.resources.tasks import tasks
 
 
 def initialize_routes(api):
-    api.add_namespace(todos)
+    api.add_namespace(tasks)
