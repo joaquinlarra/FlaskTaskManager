@@ -1,6 +1,7 @@
 # SHELL command queue
 
-This app will run shell commands posted to `v1/tasks/new_task` in background (and enque them). 
+This app runs shell commands posted to `v1/tasks/new_task`.
+Once sent, command is added to _commands queue_ running in background.  
 You can later check the outpout at `v1/tasks/get_output/:id`.
 
 ## Usage
