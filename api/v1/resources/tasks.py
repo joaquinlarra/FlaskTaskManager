@@ -29,9 +29,7 @@ class Tasks(Resource):
         task_id = Task.objects.count() + 1
         task = Task(task_id= task_id, cmd=cmd, output='').save()
         execute_async_command(cmd,task_id)
-        
-
-        return json.loads(task.to_json()), 200
+        return {'id':task_id}, 200
 
 @tasks.route('/get_output/<id>')
 @tasks.response(404, 'Todo not found')
