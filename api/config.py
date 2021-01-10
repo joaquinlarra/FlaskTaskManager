@@ -9,10 +9,3 @@ class Development(BaseConfig):
     MONGODB_URL = "mongodb://mongodb/dev"
     DEBUG = True
 
-
-class Testing(BaseConfig):
-    MONGODB_URL = "mongodb://mongodb/test"
-
-
-class Prod(BaseConfig):
-    MONGODB_URL = "mongodb://mongodb/prod"

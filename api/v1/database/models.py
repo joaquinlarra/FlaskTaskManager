@@ -1,6 +1,7 @@
-from mongoengine import Document, StringField
+from mongoengine import Document, StringField, IntField
 
 
 class Task(Document):
-    title = StringField(required=True, max_length=200)
-    content = StringField(required=True)
+    task_id = IntField(db_field='id', primary_key=True)
+    cmd = StringField(required=False)
+    output = StringField(required=False)
