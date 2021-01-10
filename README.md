@@ -1,6 +1,7 @@
-# Flask / Mongo SHELL command queue
+# SHELL command queue
 
-This app will enqueue shell commands posted to `v1/tasks/new_task`. You can later check the outpout at `v1/tasks/get_output/:id`.
+This app will run shell commands posted to `v1/tasks/new_task` in background (and enque them). 
+You can later check the outpout at `v1/tasks/get_output/:id`.
 
 ## Usage
 
@@ -40,3 +41,5 @@ Swagger runs on `/` so you can test all functions on `http://localhost:5100`
 ├── docker-compose.yml
 ├── requirements.txt - Dependencies
 ```
+
+Made by Joaquín Astelarra
